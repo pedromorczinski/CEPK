@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Mundo de Blocos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #172416;
+            color: white;
+        }
+
+        header {
+            background: #315c27;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #213c1b;
+        }
+
+        header h1 {
+            font-size: 42px;
+            text-shadow: 3px 3px #182716;
+        }
+
+        nav {
+            background: #243c20;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a8ff75;
+        }
+
+        .hero {
+            min-height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                linear-gradient(#0005, #0008),
+                linear-gradient(180deg, #5da8d4 0%, #a7d8ed 55%,
+                #4b9638 55%, #276321 100%);
+        }
+
+        .hero h2 {
+            font-size: 46px;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px #222;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            background: #65a83d;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 3px solid #274d20;
+            box-shadow: 4px 4px #172416;
+        }
+
+        .botao:hover {
+            background: #83cb54;
+        }
+
+        section {
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #9ce86d;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #2c4229;
+            padding: 25px;
+            width: 250px;
+            border: 3px solid #537747;
+            border-radius: 6px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .emoji {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #b4f58b;
+        }
+
+        .sobre {
+            background: #223620;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #101a0f;
+            text-align: center;
+            padding: 25px;
+            color: #b7c9b0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>⛏ MINECRAFT</h1>
+        <p>Explore, construa e sobreviva!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#mobs">Mobs</a>
+        <a href="#aventura">Aventura</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h2>Seu mundo, suas regras!</h2>
+            <p>Entre em um universo de blocos e aventuras infinitas.</p>
+            <a class="botao" href="#aventura">COMEÇAR A EXPLORAR</a>
+        </section>
+
+        <section id="mobs">
+            <h2>Conheça os Mobs</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="emoji">🧟</div>
+                    <h3>Zumbi</h3>
+                    <p>Uma criatura hostil que aparece no escuro. Cuidado durante a noite!</p>
+                </article>
+
+                <article class="card">
+                    <div class="emoji">💥</div>
+                    <h3>Creeper</h3>
+                    <p>Chega silenciosamente e pode explodir perto de você!</p>
+                </article>
+
+                <article class="card">
+                    <div class="emoji">🐉</div>
+                    <h3>Ender Dragon</h3>
+                    <p>Um dos grandes desafios do jogo, encontrado no End.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="aventura">
+            <h2>Escolha sua aventura</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="emoji">🏡</div>
+                    <h3>Construção</h3>
+                    <p>Crie casas, castelos e cidades usando sua imaginação.</p>
+                </article>
+
+                <article class="card">
+                    <div class="emoji">⚔️</div>
+                    <h3>Sobrevivência</h3>
+                    <p>Consiga recursos, fabrique equipamentos e enfrente perigos.</p>
+                </article>
+
+                <article class="card">
+                    <div class="emoji">💎</div>
+                    <h3>Exploração</h3>
+                    <p>Descubra cavernas, minérios raros e novas dimensões.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre Minecraft</h2>
+            <p>
+                Minecraft é um jogo de mundo aberto em que você pode
+                explorar, construir, criar ferramentas e viver aventuras.
+                Use sua criatividade para transformar blocos em qualquer coisa!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site de fã de Minecraft | Feito com HTML e CSS</p>
+        <p> Minecraft é uma marca da Mojang Studios.</p>
+    </footer>
+
+</body>
+</html>
